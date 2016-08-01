@@ -146,6 +146,22 @@
 
 .nav__item{
   display: inline-block;
+
+  &:hover{
+    .nav__title{
+      color: $light-yellow;
+    }
+
+    .nav__icon{
+      svg{
+        *{
+         fill: $light-yellow;
+        }
+      }
+    }
+
+
+  }
 }
 
 .nav__icon{
@@ -159,6 +175,7 @@
 
     *{
       fill: #fff;
+      transition: fill .3s;
     }
   }
 }
@@ -171,4 +188,5 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   padding-left: 5px;
+  transition: color .3s;
 }
