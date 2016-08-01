@@ -1,0 +1,25 @@
+/*vars*/
+$container-width: 1170px;
+$footer-height: 125px;
+
+/*colors*/
+$bg-color: #fff;
+$red: #fb3e38;
+$yellow: #ff8f30;
+$light-yellow: #ffc960;
+$grey: #2e2e2e;
+$light-grey: #676767;
+$bg-grey: #f0f0f0;
+
+
+
+/*layout*/
+// @import "_adjust/fonts.scss";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic);
+@import "../bower/normalize.css/normalize.css";
+@import "_adjust/adjustment.scss";
+@import "_adjust/mixins.scss";
+@import "sections/header.scss";
+
+//////main section
+
