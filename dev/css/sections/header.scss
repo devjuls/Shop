@@ -159,8 +159,6 @@
         }
       }
     }
-
-
   }
 }
 
@@ -200,7 +198,7 @@
 }
 
 .breadcrumbs__list{
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .breadcrumbs__item{
@@ -225,4 +223,18 @@
 .breadcrumbs__link{
   color: $red;
   font-size: 11px;
+}
+
+
+////// title
+
+.title{
+  background: $bg-grey;
+  padding-bottom: 22px;
+}
+
+.title__text{
+  font-size: 24px;
+  color: $grey;
+  font-weight: 300;
 }
