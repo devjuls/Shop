@@ -13,9 +13,13 @@
 }
 
 .categories__item{
-  padding: 18px 22px 24px;
+  padding: 18px 18px 24px 22px;
   border-bottom: 1px solid $bg-grey;
   position: relative;
+}
+
+.categories__link{
+  display: block;
 }
 
 .categories__icon, .categories__title, .categories__amount{
@@ -26,16 +30,19 @@
 .categories__title{
   font-size: 15px;
   color: $grey;
-  font-weight: 600;
-  line-height: 16px;
+  line-height: 1.1;
+  max-width: 80%;
 }
 
 .categories__icon{
   width: 25px;
-  height: 30px;
+  // height: 30px;
+  text-align: center;
+  margin-right: 15px;
 }
 
 .categories__icon-pic{
+  // display: inline-block;
   max-width: 100%;
   max-height: 100%;
 }
@@ -45,7 +52,7 @@
   line-height: 16px;
   color: $light-grey;
   position: absolute;
-  right: 22px;
+  right: 18px;
   top: 50%;
   margin-top: -10px;
 }
