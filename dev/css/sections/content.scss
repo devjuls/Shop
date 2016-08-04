@@ -4,10 +4,9 @@
 }
 
 .products__item{
-  // border-bottom: 1px solid $bg-grey;
+  border-bottom: 1px solid $line-grey;
   position: relative;
-    border-bottom: 1px solid #000;
-    font-size: 0;
+  font-size: 0;
 
   &:last-child{
     border-bottom: none;
@@ -18,15 +17,16 @@
   }
 }
 
+
+///slideshow
+
 .products__slideshow{
   display: inline-block;
   vertical-align: top;
   width: 30%;
   text-align: center;
-  // border-left: 1px solid $bg-grey;
-  // border-right: 1px solid $bg-grey;
-    border-left: 1px solid #000;
-  border-right: 1px solid #000;
+  border-left: 1px solid $line-grey;
+  border-right: 1px solid $line-grey;
   padding: 22px 22px 10px;
 }
 
@@ -57,6 +57,9 @@
   max-height: 100%;
 }
 
+
+///product info
+
 .products__item-info{
   display: inline-block;
   vertical-align: top;
@@ -77,6 +80,8 @@
 }
 
 
+///product order
+
 .products__order{
   display: inline-block;
   vertical-align: top;
@@ -90,7 +95,7 @@
 }
 
 .products__order-inner{
-  border: 1px solid #000;
+  border: 1px solid $line-grey;
   position: absolute;
   top: 20px;
   bottom: 20px;
@@ -106,6 +111,7 @@
 }
 
 .btn-order{
+  display: block;
   padding: 8px 43px;
   border-radius: 20px;
   color: #fff;
@@ -114,4 +120,60 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
+  transition: background-color, .3s;
+
+  &:hover{
+    background-color: #ff9e4c;
+  }
+}
+
+
+//////pagination
+
+.pagination{
+  text-align: center;
+  padding: 34px 0;
+}
+
+.pagination__list{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pagination__item{
+  display: inline-block;
+
+  &.active{
+    .pagination__link{
+      color: $red;
+      cursor: default
+    }
+  }
+}
+
+.pagination__link{
+  padding-right: 18px;
+  font-size: 16px;
+  color: $light-grey;
+
+  &:hover{
+    color: $yellow;
+  }
+}
+
+.pagination__control{
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 18px;
+  font-size: 20px;
+  color: $light-grey;
+
+  &:hover{
+    color: $yellow;
+  }
+
+  &.active{
+    color: $red;
+    cursor: default
+  }
 }

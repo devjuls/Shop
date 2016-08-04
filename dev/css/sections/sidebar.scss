@@ -3,8 +3,11 @@
 
   .container{
     background: #fff;
-    @extend %clearfix;
-    border-bottom: 1px solid #000;
+
+    &:first-child{
+      @extend %clearfix;
+      border-bottom: 1px solid $line-grey;
+    }
   }
 }
 
@@ -15,13 +18,35 @@
 
 .categories__item{
   padding: 18px 18px 24px 22px;
-  // border-bottom: 1px solid $bg-grey;
-      border-bottom: 1px solid #000;
+  border-bottom: 1px solid $line-grey;
   position: relative;
+  transition: background-color .3s;
+
+  &:hover{
+    background-color: #ff8e2f, 0.8;
+    cursor: pointer;
+
+    .categories__title{
+      color: $red;
+    }
+
+    .categories__amount{
+      color: $red;
+    }
+  }
+
+
 }
 
 .categories__link{
   display: block;
+    margin-right: 30px;
+
+  &:hover{
+    .categories__title{
+      color: $red;
+    }
+  }
 }
 
 .categories__icon, .categories__title, .categories__amount{
@@ -34,6 +59,7 @@
   color: $grey;
   line-height: 1.1;
   max-width: 80%;
+  transition: color .3s;
 }
 
 .categories__icon{
@@ -56,5 +82,6 @@
   right: 18px;
   top: 50%;
   margin-top: -10px;
+  transition: color .3s;
 }
 
