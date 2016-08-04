@@ -9,6 +9,10 @@
     border-bottom: 1px solid #000;
     font-size: 0;
 
+  &:last-child{
+    border-bottom: none;
+  }
+
   > *{
     font-size: 16px;
   }
