@@ -177,3 +177,17 @@
     cursor: default
   }
 }
+
+
+//////footer
+
+.footer{
+  text-align: center;
+  background: $bg-grey;
+  padding-top: 40px;
+}
+
+.address, .copyright{
+  font-size: 13px;
+  color: $light-grey;
+}
